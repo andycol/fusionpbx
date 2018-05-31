@@ -1037,6 +1037,9 @@ function type_onchange(dialplan_detail_type) {
 
 
 
+
+
+
 	echo "<tr>\n";
 	echo "<td class='vncellreq' valign='top' align='left' nowrap>\n";
 	echo "	".$text['label-order']."\n";
