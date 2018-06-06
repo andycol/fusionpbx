@@ -985,6 +985,15 @@ $text['label-10d']['ru-ru'] = "10 Цифр Длинная дистанция";
 $text['label-10d']['sv-se'] = "10 Siffror Långdistans";
 $text['label-10d']['uk-ua'] = "10 цифр міжміського номера";
 
+
+$text['label-SA']['en-us'] = "SA 4 to 10 Digits";
+$text['label-SAi+27']['en-us'] = "SA +27";
+
+
+
+$text['label-SA+27']['en-us'] = "SA +27 Digits";
+
+
 $text['description-shortcut']['en-us'] = "Shortcut to create the outbound dialplan entries for this Gateway.";
 $text['description-shortcut']['ar-eg'] = "";
 $text['description-shortcut']['de-at'] = "Abkkürzung um ausgehende Wählpläne für dieses Gateway zu erstellen."; //copied from de-de
