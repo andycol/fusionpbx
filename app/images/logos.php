@@ -1,4 +1,6 @@
 <?php
+ini_set('display_errors', 'On');
+error_reporting(E_ALL);
 /*
 	FusionPBX
 	Version: MPL 1.1
@@ -57,7 +59,7 @@
 			//if from logos, get logo details from db
 				$logo_uuid = check_str($_GET['id']); //logos
 				if ($logo_uuid != '') {
-					$sql = "select logo_filename, logo_base64 from v_logos ";
+					$sql = "select logo_filename, from v_logos ";
 					$sql .= "where domain_uuid = '".$domain_uuid."' ";
 					$sql .= "and logo_uuid = '".$logo_uuid."' ";
 					$prep_statement = $db->prepare(check_sql($sql));

@@ -212,7 +212,7 @@
 							$label = $text['label-SA'];
 							$abbrv = "SA";
 							break;
-						case "^(\+27{9})$":
+						case "^\+?27?(.*)$":
 						$label = $text['label-SA+27'];
 						$abbrv = "+27";
 						break;
@@ -1016,7 +1016,7 @@ function type_onchange(dialplan_detail_type) {
 	echo "    <option value='^(\\d{9})\$'>".$text['label-9d']."</option>\n";
 	echo "    <option value='^(\\d{10})\$'>".$text['label-10d']."</option>\n";
 	echo "    <option value='^(\\d{4,10})\$'>".$text['label-SA']."</option>\n";
-	echo "    <option value='^(\\+27{9})\$'>".$text['label-SA+27']."</option>\n";
+	echo "    <option value='^\+?27?(.*)$'>".$text['label-SA+27']."</option>\n";
 	echo "    <option value='^\+?(\\d{11})\$'>".$text['label-11d']."</option>\n";
 	echo "    <option value='^\+?1?(\\d{10})\$'>".$text['label-north-america']."</option>\n";
 	echo "    <option value='^(011\\d{9,17})\$'>".$text['label-north-america-intl']."</option>\n";
