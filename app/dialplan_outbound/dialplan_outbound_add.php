@@ -70,13 +70,10 @@
 			$limit = check_str($_POST["limit"]);
 			$accountcode = check_str($_POST["accountcode"]);
 			$toll_allow = check_str($_POST["toll_allow"]);
-<<<<<<< HEAD
 			$pin_codes_enable = check_str($_POST["pin_codes_enabled"]);
 		//set default to enabled
 			if (strlen($pin_codes_enable) == 0) { $pin_codes_enable = "false"; }
-=======
 
->>>>>>> b40c1305bbee283ede14a40db9f95773d0d17855
 		//set the default type
 			$gateway_type = 'gateway';
 			$gateway_2_type = 'gateway';
@@ -580,7 +577,6 @@
 							$array['dialplans'][$x]['dialplan_details'][$y]['dialplan_detail_group'] = '0';
 						}
 
-<<<<<<< HEAD
 
 						if ($pin_codes_enable == "true") {
                                                         $y++;
@@ -596,7 +592,6 @@
 
 
 
-=======
 						if (strlen($toll_allow) > 0) {
 							$y++;
 							$array['dialplans'][$x]['dialplan_details'][$y]['dialplan_detail_uuid'] = uuid();
@@ -608,7 +603,6 @@
 							$array['dialplans'][$x]['dialplan_details'][$y]['dialplan_detail_order'] = $y * 10;
 							$array['dialplans'][$x]['dialplan_details'][$y]['dialplan_detail_group'] = '0';
 						}
->>>>>>> b40c1305bbee283ede14a40db9f95773d0d17855
 
 						if ($gateway_type == "transfer") { $dialplan_detail_type = 'transfer'; } else { $dialplan_detail_type = 'bridge'; }
 						$y++;
@@ -1101,7 +1095,6 @@ function type_onchange(dialplan_detail_type) {
 	echo "</td>\n";
 	echo "</tr>\n";
 
-<<<<<<< HEAD
 
 	echo "<tr>\n";
         echo "<td class='vncell' valign='top' align='left' nowrap>\n";
@@ -1118,7 +1111,6 @@ function type_onchange(dialplan_detail_type) {
 
 
 
-=======
 	echo "<tr>\n";
 	echo "<td class='vncell' valign='top' align='left' nowrap>\n";
 	echo "    ".$text['label-toll_allow']."\n";
@@ -1129,7 +1121,6 @@ function type_onchange(dialplan_detail_type) {
 	echo $text['description-enable-toll_allow']."\n";
 	echo "</td>\n";
 	echo "</tr>\n";
->>>>>>> b40c1305bbee283ede14a40db9f95773d0d17855
 
 	echo "<tr>\n";
 	echo "<td class='vncellreq' valign='top' align='left' nowrap>\n";
