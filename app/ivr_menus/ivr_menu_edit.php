@@ -104,7 +104,7 @@
 			$ivr_menu_ringback = check_str($_POST["ivr_menu_ringback"]);
 			$ivr_menu_cid_prefix = check_str($_POST["ivr_menu_cid_prefix"]);
 			$ivr_menu_context = check_str($_POST["ivr_menu_context"]);
-			$ivr_menu_enabled = check_str($_POST["ivr_menu_enabled"]);
+			$ivr_menu_
 			$ivr_menu_description = check_str($_POST["ivr_menu_description"]);
 			$dialplan_uuid = check_str($_POST["dialplan_uuid"]);
 
@@ -155,8 +155,7 @@
 			if (strlen($ivr_menu_digit_len) == 0) { $msg .= $text['message-required'].$text['label-digit_length']."<br>\n"; }
 			if (strlen($ivr_menu_direct_dial) == 0) { $msg .= $text['message-required'].$text['label-direct_dial']."<br>\n"; }
 			//if (strlen($ivr_menu_ringback) == 0) { $msg .= $text['message-required'].$text['label-ring_back']."<br>\n"; }
-			if (strlen($ivr_menu_context) == 0) { $msg .= $text['message-required'].$text['label-enabled']."<br>\n"; }
-			if (strlen($ivr_menu_enabled) == 0) { $msg .= $text['message-required'].$text['label-enabled']."<br>\n"; }
+		
 			//if (strlen($ivr_menu_description) == 0) { $msg .= $text['message-required'].$text['label-description']."<br>\n"; }
 			if (strlen($msg) > 0 && strlen($_POST["persistformvar"]) == 0) {
 				require_once "resources/header.php";
